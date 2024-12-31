@@ -1,5 +1,4 @@
 export interface CoworkingSpace {
-  name: string;
   location: string;
   category: string;
   price: string;
@@ -9,7 +8,6 @@ export interface CoworkingSpace {
 
 export const coworkingSpaces: CoworkingSpace[] = [
   {
-    name: "Coworking Space Guindy 1",
     location: "Guindy",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -17,7 +15,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Anna Nagar 1",
     location: "Anna Nagar",
     category: "Budgeted(6k or less)",
     price: "6000",
@@ -25,7 +22,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - South"
   },
   {
-    name: "Coworking Space Kesavaperumalpuram",
     location: "Kesavaperumalpuram",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -33,7 +29,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - South"
   },
   {
-    name: "Coworking Space Madipakkam",
     location: "Madipakkam",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -41,7 +36,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Alwarpet",
     location: "Alwarpet",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -49,7 +43,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - Central"
   },
   {
-    name: "Coworking Space Velachery",
     location: "Velachery",
     category: "Budgeted(6k or less)",
     price: "6000",
@@ -57,7 +50,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Mylapore",
     location: "Mylapore",
     category: "Budgeted(6k or less)",
     price: "6000",
@@ -65,7 +57,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Mogappair East",
     location: "Mogappair East",
     category: "Budgeted(6k or less)",
     price: "6000",
@@ -73,7 +64,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Anna Salai",
     location: "Anna Salai",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -81,7 +71,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - Central"
   },
   {
-    name: "Coworking Space Royapettah",
     location: "Royapettah",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -89,7 +78,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - North"
   },
   {
-    name: "Coworking Space OMR",
     location: "OMR",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -97,7 +85,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - South"
   },
   {
-    name: "Coworking Space Vadapalani",
     location: "Vadapalani",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -105,7 +92,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - South"
   },
   {
-    name: "Coworking Space Nungambakkam",
     location: "Nungambakkam",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -113,7 +99,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - West"
   },
   {
-    name: "Coworking Space Maduravoyal",
     location: "Maduravoyal",
     category: "Budgeted(6k or less)",
     price: "6000",
@@ -121,7 +106,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - West"
   },
   {
-    name: "Coworking Space Tambaram",
     location: "Tambaram",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -129,7 +113,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - South"
   },
   {
-    name: "Coworking Space Perungudi",
     location: "Perungudi",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -137,7 +120,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - South"
   },
   {
-    name: "Coworking Space Nandanam",
     location: "Nandanam",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -145,7 +127,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - West"
   },
   {
-    name: "Coworking Space Teynampet",
     location: "Teynampet",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -153,7 +134,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - South"
   },
   {
-    name: "Coworking Space Greams Road",
     location: "Greams Road",
     category: "Premium(12K or More)",
     price: "12000",
@@ -161,7 +141,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - Central"
   },
   {
-    name: "Coworking Space Sholinganallur",
     location: "sholinganallur",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -169,7 +148,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Saidapet",
     location: "Saidapet",
     category: "Premium(12K or More)",
     price: "12000",
@@ -177,7 +155,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Kolathur",
     location: "Kolathur",
     category: "Budgeted(6k or less)",
     price: "6000",
@@ -185,7 +162,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - North"
   },
   {
-    name: "Coworking Space Besant Nagar",
     location: "Besant nagar",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -193,7 +169,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Kodambakkam",
     location: "Kodambakkam",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -201,7 +176,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Kilpauk",
     location: "Kilpauk",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -209,7 +183,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - West"
   },
   {
-    name: "Coworking Space Chetpet",
     location: "Chetpet",
     category: "Budgeted(6k or less)",
     price: "6000",
@@ -217,7 +190,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - North"
   },
   {
-    name: "Coworking Space Saligramam",
     location: "Saligramam",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -225,7 +197,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - North"
   },
   {
-    name: "Coworking Space Purasaiwakkam",
     location: "Purasaiwakkam",
     category: "Budgeted(6k or less)",
     price: "6000",
@@ -233,7 +204,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - West"
   },
   {
-    name: "Coworking Space Thiruvanmiyur",
     location: "Thiruvanmiyur",
     category: "Budgeted(6k or less)",
     price: "6000",
@@ -241,7 +211,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Koyembedu",
     location: "Koyembedu",
     category: "Budgeted(6k or less)",
     price: "6000",
@@ -249,7 +218,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - North"
   },
   {
-    name: "Coworking Space Villivakkam",
     location: "Villivakkam",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -257,7 +225,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - North"
   },
   {
-    name: "Coworking Space Porur",
     location: "Porur",
     category: "Premium(12K or More)",
     price: "12000",
@@ -265,7 +232,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - North"
   },
   {
-    name: "Coworking Space Thoraipakkam",
     location: "Thoraipakkam",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -273,7 +239,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Aminjikarai",
     location: "Aminjikarai",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -281,7 +246,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - North"
   },
   {
-    name: "Coworking Space Egmore",
     location: "Egmore",
     category: "Budgeted(6k or less)",
     price: "6000",
@@ -289,7 +253,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - South"
   },
   {
-    name: "Coworking Space Oragadam",
     location: "oragadam",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -297,7 +260,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - South"
   },
   {
-    name: "Coworking Space Ambattur",
     location: "Ambattur",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -305,7 +267,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - North"
   },
   {
-    name: "Coworking Space Ekkatuthangal",
     location: "Ekkatuthangal",
     category: "Sub premium (6k-12k)",
     price: "6000",
@@ -313,7 +274,6 @@ export const coworkingSpaces: CoworkingSpace[] = [
     area: "Chennai - East"
   },
   {
-    name: "Coworking Space Ambattur OT",
     location: "Ambattur OT",
     category: "Budgeted(6k or less)",
     price: "6000",
