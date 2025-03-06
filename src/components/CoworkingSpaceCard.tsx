@@ -1,7 +1,9 @@
 import React from "react";
 import { CoworkingSpace } from "../data/coworkingSpaces";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
 
 interface CoworkingSpaceCardProps {
   activeSpaces: CoworkingSpace[];
@@ -15,7 +17,7 @@ const CoworkingSpaceCard: React.FC<CoworkingSpaceCardProps> = ({
   const cardStyle: React.CSSProperties = {
     background: "rgba(255, 255, 255, 0.8)",
     borderRadius: "15px",
-    padding: "20px",
+    padding: "10px 50px",
     maxWidth: "400px",
     color: "black",
     textAlign: "left",
@@ -45,15 +47,22 @@ const CoworkingSpaceCard: React.FC<CoworkingSpaceCardProps> = ({
     justifyContent: "center",
     fontSize: "18px",
     cursor: "pointer",
-    zIndex: 10000, // Higher than the card's z-index
+    zIndex: 10000,
   };
 
   const slideStyle: React.CSSProperties = {
-    background: "linear-gradient(135deg, #f5f5f5, #e0e0e0)", // Subtle gradient for background
-    borderRadius: "10px", // Rounded corners for the slide
-    padding: "20px", // Padding inside the slide
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Light shadow for depth
-    margin: "10px", // Space between slides
+    background: "linear-gradient(135deg, #f5f5f5, #e0e0e0)",
+    borderRadius: "10px",
+    padding: "20px",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    margin: "10px",
+  };
+
+  const phoneStyle: React.CSSProperties = {
+    fontWeight: "bold",
+    color: "#007bff",
+    textDecoration: "none",
+    marginRight: "10px", // Space between numbers
   };
 
   return (
@@ -62,7 +71,7 @@ const CoworkingSpaceCard: React.FC<CoworkingSpaceCardProps> = ({
         ✖
       </button>
 
-      <Swiper spaceBetween={10} slidesPerView={1}>
+      <Swiper spaceBetween={10} slidesPerView={1} modules={[Navigation]} navigation>
         {activeSpaces.map((space, index) => (
           <SwiperSlide key={index}>
             <div style={slideStyle}>
@@ -79,6 +88,29 @@ const CoworkingSpaceCard: React.FC<CoworkingSpaceCardProps> = ({
               <p>
                 <strong>Area:</strong> {space.area}
               </p>
+              <p>
+                <strong>Coordinates:</strong> ({space.coordinates[0]},{" "}
+                {space.coordinates[1]})
+              </p>
+              {space.poc && (
+                <p>
+                <strong>Point of Contact:</strong>{" "}
+                {space.poc &&
+                  space.poc.map((contact, idx) => (
+                    <span key={idx}>
+                      {contact.name} -{" "}
+                      {contact.contact
+                        .split("/") // Split the contact string by "/"
+                        .map((phone, index) => (
+                          <a key={index} href={`tel:${phone.trim()}`} style={phoneStyle}>
+                            {phone.trim()}
+                          </a>
+                        ))}
+                    </span>
+                  ))}
+              </p>
+              
+              )}
             </div>
           </SwiperSlide>
         ))}
